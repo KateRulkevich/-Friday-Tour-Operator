@@ -1,0 +1,7 @@
+@charset "UTF-8";
+@font-face { font-family:"FreeSet";src:url("#FontID1") format(svg)}
+@font-face { font-family:"Chianti_win95";src:url("#FontID0") format(svg)}
+.fil1 {fill:$text_color}
+.fil0 {fill:$green_color}
+.fnt1 {font-weight:normal;font-size:1em;font-family:'FreeSet'}
+.fnt0 {font-weight:bold;font-size:6em;font-family:'Chianti_win95'}

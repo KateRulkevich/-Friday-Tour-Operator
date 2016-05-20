@@ -1,0 +1,76 @@
+.menu{
+	@include blockStyle;
+	padding: 0;
+	&__item{
+		width: 16.66666666667%;
+		float: left;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 8px 0;
+		border-right: 1px solid #F5F5F5;
+		&:hover, &_active{
+			background: $menu_background;
+			cursor: pointer;
+
+		}
+	}
+		&__item:hover > .menu2__dropMenu{
+				display: block;
+				position: absolute;
+				z-index: 10;
+		}
+}
+
+.menu2{
+	&__dropMenu{
+		display: none;
+		padding-left: 0;
+		
+		width: 16.66%;
+		max-width: 227.656px;
+		margin-top: 5px;
+	}
+}
+.dropMenu{
+	&__item{
+		background: transparentize($green_color, 0.1);
+		padding: 8px 0;
+
+		border-top: 2px solid #F5F5F5;
+			&_first{
+				margin-top: 3px;
+			}
+			&:hover, &_active{
+				background: $menu_background;
+			}
+			
+	}
+}
+.mainItem{
+	color: $menu_item_color;
+	.menu__item:hover > &{
+	color: $item_color;
+	}	
+	&_active{
+	color: $item_color;		
+	}
+}
+.dropItem{
+	color: #fff;
+		&_active{
+		color: $item_color;			
+		}
+	.dropMenu__item:hover > &{
+	color: $item_color;		
+	}
+}
+.menuResponsive{
+	display: none;
+	padding: 0 5px 20px 0;
+	color: $blue_color;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: right;
+	cursor: pointer;
+
+}

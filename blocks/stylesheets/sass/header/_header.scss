@@ -1,0 +1,113 @@
+.header{
+	@include blockStyle;
+
+	&__logo{
+		width: 45%;
+		min-width: 320px;
+		background: linear-gradient($dark_grey_color, $background_color);
+		background-size: 80.7% auto;
+		background-repeat: no-repeat;
+			&_align{
+				float: left;
+			}
+	}
+	&__topBlock{
+		width: 54%;
+			&_align{
+			float: right;
+			margin: 5px 5px 0 0;
+			text-align: right;
+
+			}
+	}
+}
+.logo{
+	&__image{
+		margin: 40px 0 0 9%;
+		width: 60%;
+		min-width: 250px;
+	}
+	&__earthHolder{
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		@include earthSize;
+			&_align{
+				margin: 5px 0 0 15px;
+			}
+	}
+	&__case{
+		display: inline-block;
+		position: relative;
+		z-index: 10;
+
+			&_align{
+				left: 67%;
+				top: -50px;
+			}
+	}
+}
+.earthHolder{
+	&__earthBall{
+		z-index: 3;
+	    position: absolute;
+		@include earthSize;
+	    opacity: 0.74;    
+	    box-shadow: inset 10px -10px 20px #000, inset 10px -10px 20px #000;
+	}
+	&__earthGlow{
+		z-index: 4;  
+		box-shadow: 0 0px 10px rgba(79,156,201,0.80);
+		position: absolute;
+		@include earthSize;
+	}
+	&__earth{
+		z-index: 1;
+		position: absolute;
+		@include earthSize;
+		background: url(../../../img/earth.png) 0px 0px;
+
+    -webkit-transform: rotate(23deg);
+    -moz-transform: rotate(23deg);
+    -o-transform: rotate(23deg);
+    -ms-transform: rotate(23deg);
+    transform: rotate(23deg);
+    -webkit-animation: rotate_earth 60s linear infinite;
+    -moz-animation: rotate_earth 60s linear infinite;
+    -ms-animation: rotate_earth 60s linear infinite;
+    -o-animation: rotate_earth 60s linear infinite;
+    animation: rotate_earth 60s linear infinite;
+	/* Задержка перед началом */
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+	animation-delay: 2s;
+	}
+}
+.topBlock{
+	&__image{
+		margin-left: 10px;
+		&_first{
+			margin-left: 0;
+		}
+	}
+	&__symbol{
+		color: $blue_color;
+		font-size: 1.5em;
+	}				
+	&__input{
+		width: 50%;
+
+		&_align{
+			margin-top: 40px;
+		}
+	}
+	&__button{
+	background-color: $green_color;
+	@include buttonStyle;
+
+		&_align{
+			margin-left: -7px;
+		}
+	}
+}

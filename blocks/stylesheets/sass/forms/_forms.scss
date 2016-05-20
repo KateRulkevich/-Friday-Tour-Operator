@@ -1,0 +1,31 @@
+.proposal{
+	width: 300px;
+		&_align{
+		margin: 20px auto;
+		text-align: center;
+
+		}
+		&__title{
+		@include blockTitle;
+		color: $blue_color;
+		font-size: 1em;	
+			&_align{
+				margin-bottom: 10px;
+			}		
+		}
+		&__input{
+			width: 100%;
+			max-width: 300px;
+			border-radius: 3px;
+			border: 1px solid $dark_grey_color;
+			line-height: 1.5em;
+			&_align{
+				margin-bottom: 10px;
+				padding: 5px;
+			}
+		}
+		&__button{
+		background-color: $blue_color;
+		@include buttonStyle;	
+		}
+}

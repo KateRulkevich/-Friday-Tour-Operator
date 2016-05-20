@@ -1,0 +1,283 @@
+.advertBlock{
+	@include blockStyle;
+	background: linear-gradient($dark_grey_color 12%, $light_grey_color 12%, $light_grey_color 98.8%, transparent 98.8%);
+		&_align{
+			margin-top: 2px;
+		}
+		&__text{
+			width: 36.3103953147877%;
+			min-width: 320px;
+			float: left;
+
+		}
+		&__slide{
+			width: 63.6896046852123%; /*width of img 870/1366*/
+			float: right;
+
+		}
+		@media (max-width: 899px){
+			background: url(../../../img/c1.jpg) no-repeat;
+			background-size: 100%;
+		}
+}
+.slide{
+	
+	&__image{
+		width: 100%;
+	}
+}
+.text{
+
+	&__title{
+	@include blockTitle;
+	padding-top: 10px;
+
+	}
+	&__description{
+		font-size: 1.05em;
+		line-height: 1.7em;
+		text-align: justify;
+		padding: 20px;
+
+		&_align{
+			margin-top: 20px;
+		}
+	}
+	&__button{
+		width: 130px;
+		background-color: $blue_color;
+		@include buttonStyle;
+		position: relative;
+		z-index: 5;
+		&_align{
+			top: 50px;
+			left: 79%;
+
+		}
+
+	}
+}
+.blockSearch{
+	@include blockStyle;
+	overflow: hidden;
+		&_align{
+			margin-top: 20px;
+		}
+		&_alignSecondPage{
+			margin-top: 2px;
+		}
+	&__title{
+	@include blockTitle;	
+	background-color: $blue_color;
+	padding: 10px 0;
+		&_align{
+		margin-bottom: 20px;
+		}	
+	}	
+	&__item{
+		width: 25%;
+		min-width: 200px;
+		text-align: center;
+		&_align{
+		float: left;
+		}
+	}
+}
+.searchItem{
+	&__title{
+	@include blockTitle;
+	color: $menu_item_color;		
+	}
+		&__input_align{
+			margin-top: 20px;
+		}
+	&__image_align{
+		position: relative;
+		top: 10px;
+		z-index: 1;
+	}
+	&__arrow{
+		height: 30px;
+		width: 30px;
+		background-color: $blue_color;
+		color: #fff;
+		text-align: center;
+		font-size: 1.4em;
+		cursor: pointer;
+		padding: 3px;
+		&_align{
+		display: inline-block;	
+		margin-left: -5px;
+		}
+	}
+	&__button{
+		background-color: $blue_color;
+		@include buttonStyle;
+		&_align{
+			margin-top: 40px;
+		}		
+	}
+}
+.blockSpecial{
+	@include blockStyle;
+	text-align: center;
+	&_align{
+		margin-top: 20px;
+	}
+
+	&__title{
+	@include blockTitle;	
+	background-color: $green_color;
+	padding: 10px 0;
+		&_align{
+			margin-bottom: 20px;
+		}	
+	}	
+	&__offer{
+		width: 230px;
+		height: 200px;
+		overflow: hidden;
+		display: inline-block;
+		margin-right: 20px;
+		padding-top: 2px;
+
+	}
+
+	&__tour{
+		@include blockStyle;
+	}
+}
+.offer{
+	&_end{
+		margin-right: 0;
+	}
+	&__image{
+		width: 220px;
+		height: 150px;
+		transition: transform .2s,
+		box-shadow .3s ease-in .2s;
+	}
+	&__description{
+		color: $text_color;
+		transition: transform .2s,
+		color .3s ease-in .2s;
+	}
+	&__part:hover > .offer__description{
+			color: $green_color;
+		}
+	&__part:hover > .offer__image{
+			box-shadow: 0 0 2px 2px rgba($green_color,.4);
+		}
+}
+
+.tourBlock{
+	@include blockStyle;
+	&_align{
+		margin: 20px auto;
+	}
+		&__item{
+			width: 25%;
+			min-width: 200px;
+			&_align{
+				float: left;
+				padding-left: 10px;
+			}
+		}
+		&__item2{
+			width: 70%;
+			min-width: 300px;
+			line-height: 1.4em;
+			&_align{
+				float: left;
+				padding: 0 10px;				
+			}
+		}
+		&__image{
+			width: 30%;
+			min-width: 200px;
+			&_align{
+				float: right;
+			}
+		}
+}
+.tourBlock__item2 > .tourItem__title{
+	text-align: center;
+}
+
+.tourImg{
+	&__image{
+		width: 33%;
+		display: inline-block;
+	}
+
+}
+.tourItem{
+	&__title{
+		@include blockTitle;
+		color: $blue_color;
+		text-align: left;
+		font-size: 1em;
+		&_align{
+			padding-bottom: 10px;			
+		}
+	}
+	&__description{
+		text-align: justify;
+	}
+	&__image{
+		width: 100%;
+		&_align{
+			margin: 40px 0;
+		}
+	}
+	&__more{
+		background-color: $blue_color;
+		@include buttonStyle;		
+	}
+}
+.daysRoutine{
+	&__item{
+			font-weight: bold;	
+			text-decoration: underline;	
+	}
+}
+.tourBlockExtra{
+	width: 75%;
+	min-width: 500px;
+	min-height: 450px;
+	&__title{
+		@include blockTitle;
+		color: $blue_color;
+		text-align: center;
+	}
+	&__description{
+		text-align: justify;
+			&_align{
+			margin: 10px 0;
+			line-height: 1.7em;
+			text-align: center;
+		}
+	}
+
+
+	
+	&__image{
+	width: 100%;
+	text-align: center;
+	}
+}
+.noteList{
+	&__item{
+		margin-bottom: 10px;
+		color: $menu_item_color;
+		&:hover{
+		cursor: pointer;
+		text-decoration: underline;	
+		color: $item_color;		
+		};
+	}
+}
+.tourBlockFullWidth{
+	width: 80%;
+	min-height: 450px;
+}
