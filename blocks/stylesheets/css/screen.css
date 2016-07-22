@@ -358,6 +358,30 @@ ul, ol {
 a {
   text-decoration: none; }
 
+.header, .menu, .advertBlock, .blockSearch, .blockSpecial, .blockSpecial__tour, .tourBlock, .footer {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.logo__earthHolder, .earthHolder__earthBall, .earthHolder__earthGlow, .earthHolder__earth {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
+
+.text__title, .blockSearch__title, .searchItem__title, .blockSpecial__title, .tourItem__title, .tourBlockExtra__title, .proposal__title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff; }
+
+.topBlock__button, .text__button, .searchItem__button, .tourItem__more, .proposal__button {
+  color: #fff;
+  border: none;
+  padding: 3px 10px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.5em; }
+
 @-moz-keyframes rotate_earth {
   0% {
     background-position: 0px -2px; }
@@ -431,25 +455,20 @@ input {
   font-size: 6em;
   font-family: 'Chianti_win95'; }
 
-.header {
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  overflow: hidden; }
-  .header__logo {
-    width: 45%;
-    min-width: 320px;
-    background: linear-gradient(#9D9E9E, #F5F5F5);
-    background-size: 80.7% auto;
-    background-repeat: no-repeat; }
-    .header__logo_align {
-      float: left; }
-  .header__topBlock {
-    width: 54%; }
-    .header__topBlock_align {
-      float: right;
-      margin: 5px 5px 0 0;
-      text-align: right; }
+.header__logo {
+  width: 45%;
+  min-width: 320px;
+  background: linear-gradient(#9D9E9E, #F5F5F5);
+  background-size: 80.7% auto;
+  background-repeat: no-repeat; }
+  .header__logo_align {
+    float: left; }
+.header__topBlock {
+  width: 54%; }
+  .header__topBlock_align {
+    float: right;
+    margin: 5px 5px 0 0;
+    text-align: right; }
 
 .logo__image {
   margin: 40px 0 0 9%;
@@ -458,10 +477,7 @@ input {
 .logo__earthHolder {
   display: inline-block;
   position: relative;
-  z-index: 1;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; }
+  z-index: 1; }
   .logo__earthHolder_align {
     margin: 5px 0 0 15px; }
 .logo__case {
@@ -475,24 +491,15 @@ input {
 .earthHolder__earthBall {
   z-index: 3;
   position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
   opacity: 0.74;
   box-shadow: inset 10px -10px 20px #000, inset 10px -10px 20px #000; }
 .earthHolder__earthGlow {
   z-index: 4;
   box-shadow: 0 0px 10px rgba(79, 156, 201, 0.8);
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; }
+  position: absolute; }
 .earthHolder__earth {
   z-index: 1;
   position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
   background: url(../../../img/earth.png) 0px 0px;
   -webkit-transform: rotate(23deg);
   -moz-transform: rotate(23deg);
@@ -504,7 +511,7 @@ input {
   -ms-animation: rotate_earth 60s linear infinite;
   -o-animation: rotate_earth 60s linear infinite;
   animation: rotate_earth 60s linear infinite;
-  /* ╨Ч╨░╨┤╨╡╤А╨╢╨║╨░ ╨┐╨╡╤А╨╡╨┤ ╨╜╨░╤З╨░╨╗╨╛╨╝ */
+
   -webkit-animation-delay: 2s;
   -moz-animation-delay: 2s;
   -o-animation-delay: 2s;
@@ -522,21 +529,11 @@ input {
   .topBlock__input_align {
     margin-top: 40px; }
 .topBlock__button {
-  background-color: #3CBF79;
-  color: #fff;
-  border: none;
-  padding: 3px 10px;
-  text-align: center;
-  cursor: pointer;
-  line-height: 1.5em; }
+  background-color: #3CBF79; }
   .topBlock__button_align {
     margin-left: -7px; }
 
 .menu {
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  overflow: hidden;
   padding: 0; }
   .menu__item {
     width: 16.66666666667%;
@@ -593,10 +590,6 @@ input {
   cursor: pointer; }
 
 .advertBlock {
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  overflow: hidden;
   background: linear-gradient(#9D9E9E 12%, #D9DADA 12%, #D9DADA 98.8%, transparent 98.8%); }
   .advertBlock_align {
     margin-top: 2px; }
@@ -617,9 +610,6 @@ input {
   width: 100%; }
 
 .text__title {
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
   padding-top: 10px; }
 .text__description {
   font-size: 1.05em;
@@ -631,12 +621,6 @@ input {
 .text__button {
   width: 130px;
   background-color: #3185CB;
-  color: #fff;
-  border: none;
-  padding: 3px 10px;
-  text-align: center;
-  cursor: pointer;
-  line-height: 1.5em;
   position: relative;
   z-index: 5; }
   .text__button_align {
@@ -644,19 +628,12 @@ input {
     left: 79%; }
 
 .blockSearch {
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  overflow: hidden;
   overflow: hidden; }
   .blockSearch_align {
     margin-top: 20px; }
   .blockSearch_alignSecondPage {
     margin-top: 2px; }
   .blockSearch__title {
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
     background-color: #3185CB;
     padding: 10px 0; }
     .blockSearch__title_align {
@@ -669,9 +646,6 @@ input {
       float: left; }
 
 .searchItem__title {
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
   color: #767676; }
 .searchItem__input_align {
   margin-top: 20px; }
@@ -692,28 +666,15 @@ input {
     display: inline-block;
     margin-left: -5px; }
 .searchItem__button {
-  background-color: #3185CB;
-  color: #fff;
-  border: none;
-  padding: 3px 10px;
-  text-align: center;
-  cursor: pointer;
-  line-height: 1.5em; }
+  background-color: #3185CB; }
   .searchItem__button_align {
     margin-top: 40px; }
 
 .blockSpecial {
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  overflow: hidden;
   text-align: center; }
   .blockSpecial_align {
     margin-top: 20px; }
   .blockSpecial__title {
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
     background-color: #3CBF79;
     padding: 10px 0; }
     .blockSpecial__title_align {
@@ -725,11 +686,6 @@ input {
     display: inline-block;
     margin-right: 20px;
     padding-top: 2px; }
-  .blockSpecial__tour {
-    width: 100%;
-    max-width: 1366px;
-    margin: 0 auto;
-    overflow: hidden; }
 
 .offer_end {
   margin-right: 0; }
@@ -745,31 +701,26 @@ input {
 .offer__part:hover > .offer__image {
   box-shadow: 0 0 2px 2px rgba(60, 191, 121, 0.4); }
 
-.tourBlock {
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  overflow: hidden; }
-  .tourBlock_align {
-    margin: 20px auto; }
-  .tourBlock__item {
-    width: 25%;
-    min-width: 200px; }
-    .tourBlock__item_align {
-      float: left;
-      padding-left: 10px; }
-  .tourBlock__item2 {
-    width: 70%;
-    min-width: 300px;
-    line-height: 1.4em; }
-    .tourBlock__item2_align {
-      float: left;
-      padding: 0 10px; }
-  .tourBlock__image {
-    width: 30%;
-    min-width: 200px; }
-    .tourBlock__image_align {
-      float: right; }
+.tourBlock_align {
+  margin: 20px auto; }
+.tourBlock__item {
+  width: 25%;
+  min-width: 200px; }
+  .tourBlock__item_align {
+    float: left;
+    padding-left: 10px; }
+.tourBlock__item2 {
+  width: 70%;
+  min-width: 300px;
+  line-height: 1.4em; }
+  .tourBlock__item2_align {
+    float: left;
+    padding: 0 10px; }
+.tourBlock__image {
+  width: 30%;
+  min-width: 200px; }
+  .tourBlock__image_align {
+    float: right; }
 
 .tourBlock__item2 > .tourItem__title {
   text-align: center; }
@@ -779,9 +730,6 @@ input {
   display: inline-block; }
 
 .tourItem__title {
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
   color: #3185CB;
   text-align: left;
   font-size: 1em; }
@@ -794,13 +742,7 @@ input {
   .tourItem__image_align {
     margin: 40px 0; }
 .tourItem__more {
-  background-color: #3185CB;
-  color: #fff;
-  border: none;
-  padding: 3px 10px;
-  text-align: center;
-  cursor: pointer;
-  line-height: 1.5em; }
+  background-color: #3185CB; }
 
 .daysRoutine__item {
   font-weight: bold;
@@ -811,9 +753,6 @@ input {
   min-width: 500px;
   min-height: 450px; }
   .tourBlockExtra__title {
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
     color: #3185CB;
     text-align: center; }
   .tourBlockExtra__description {
@@ -844,9 +783,6 @@ input {
     margin: 20px auto;
     text-align: center; }
   .proposal__title {
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
     color: #3185CB;
     font-size: 1em; }
     .proposal__title_align {
@@ -861,19 +797,9 @@ input {
       margin-bottom: 10px;
       padding: 5px; }
   .proposal__button {
-    background-color: #3185CB;
-    color: #fff;
-    border: none;
-    padding: 3px 10px;
-    text-align: center;
-    cursor: pointer;
-    line-height: 1.5em; }
+    background-color: #3185CB; }
 
 .footer {
-  width: 100%;
-  max-width: 1366px;
-  margin: 0 auto;
-  overflow: hidden;
   background-color: #9D9E9E;
   color: #fff;
   padding: 20px; }

@@ -1,5 +1,5 @@
 .header{
-	@include blockStyle;
+	@extend %blockStyle;
 
 	&__logo{
 		width: 45%;
@@ -31,7 +31,7 @@
 		display: inline-block;
 		position: relative;
 		z-index: 1;
-		@include earthSize;
+		@extend %earthSize;
 			&_align{
 				margin: 5px 0 0 15px;
 			}
@@ -51,7 +51,7 @@
 	&__earthBall{
 		z-index: 3;
 	    position: absolute;
-		@include earthSize;
+		@extend %earthSize;
 	    opacity: 0.74;    
 	    box-shadow: inset 10px -10px 20px #000, inset 10px -10px 20px #000;
 	}
@@ -59,12 +59,12 @@
 		z-index: 4;  
 		box-shadow: 0 0px 10px rgba(79,156,201,0.80);
 		position: absolute;
-		@include earthSize;
+		@extend %earthSize;
 	}
 	&__earth{
 		z-index: 1;
 		position: absolute;
-		@include earthSize;
+		@extend %earthSize;
 		background: url(../../../img/earth.png) 0px 0px;
 
     -webkit-transform: rotate(23deg);
@@ -104,7 +104,7 @@
 	}
 	&__button{
 	background-color: $green_color;
-	@include buttonStyle;
+	@extend %buttonStyle;
 
 		&_align{
 			margin-left: -7px;

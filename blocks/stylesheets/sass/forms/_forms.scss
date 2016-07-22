@@ -6,7 +6,7 @@
 
 		}
 		&__title{
-		@include blockTitle;
+		@extend %blockTitle;
 		color: $blue_color;
 		font-size: 1em;	
 			&_align{
@@ -26,6 +26,6 @@
 		}
 		&__button{
 		background-color: $blue_color;
-		@include buttonStyle;	
+		@extend %buttonStyle;	
 		}
 }

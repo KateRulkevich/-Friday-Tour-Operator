@@ -1,5 +1,5 @@
 .menu{
-	@include blockStyle;
+	@extend %blockStyle;
 	padding: 0;
 	&__item{
 		width: 16.66666666667%;

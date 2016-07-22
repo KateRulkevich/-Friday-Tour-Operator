@@ -1,5 +1,5 @@
 .advertBlock{
-	@include blockStyle;
+	@extend %blockStyle;
 	background: linear-gradient($dark_grey_color 12%, $light_grey_color 12%, $light_grey_color 98.8%, transparent 98.8%);
 		&_align{
 			margin-top: 2px;
@@ -29,7 +29,7 @@
 .text{
 
 	&__title{
-	@include blockTitle;
+	@extend %blockTitle;
 	padding-top: 10px;
 
 	}
@@ -46,7 +46,7 @@
 	&__button{
 		width: 130px;
 		background-color: $blue_color;
-		@include buttonStyle;
+		@extend %buttonStyle;
 		position: relative;
 		z-index: 5;
 		&_align{
@@ -58,7 +58,7 @@
 	}
 }
 .blockSearch{
-	@include blockStyle;
+	@extend %blockStyle;
 	overflow: hidden;
 		&_align{
 			margin-top: 20px;
@@ -67,7 +67,7 @@
 			margin-top: 2px;
 		}
 	&__title{
-	@include blockTitle;	
+	@extend %blockTitle;	
 	background-color: $blue_color;
 	padding: 10px 0;
 		&_align{
@@ -85,7 +85,7 @@
 }
 .searchItem{
 	&__title{
-	@include blockTitle;
+	@extend %blockTitle;
 	color: $menu_item_color;		
 	}
 		&__input_align{
@@ -112,21 +112,21 @@
 	}
 	&__button{
 		background-color: $blue_color;
-		@include buttonStyle;
+		@extend %buttonStyle;
 		&_align{
 			margin-top: 40px;
 		}		
 	}
 }
 .blockSpecial{
-	@include blockStyle;
+	@extend %blockStyle;
 	text-align: center;
 	&_align{
 		margin-top: 20px;
 	}
 
 	&__title{
-	@include blockTitle;	
+	@extend %blockTitle;	
 	background-color: $green_color;
 	padding: 10px 0;
 		&_align{
@@ -144,7 +144,7 @@
 	}
 
 	&__tour{
-		@include blockStyle;
+		@extend %blockStyle;
 	}
 }
 .offer{
@@ -171,7 +171,7 @@
 }
 
 .tourBlock{
-	@include blockStyle;
+	@extend %blockStyle;
 	&_align{
 		margin: 20px auto;
 	}
@@ -213,7 +213,7 @@
 }
 .tourItem{
 	&__title{
-		@include blockTitle;
+		@extend %blockTitle;
 		color: $blue_color;
 		text-align: left;
 		font-size: 1em;
@@ -232,7 +232,7 @@
 	}
 	&__more{
 		background-color: $blue_color;
-		@include buttonStyle;		
+		@extend %buttonStyle;		
 	}
 }
 .daysRoutine{
@@ -246,7 +246,7 @@
 	min-width: 500px;
 	min-height: 450px;
 	&__title{
-		@include blockTitle;
+		@extend %blockTitle;
 		color: $blue_color;
 		text-align: center;
 	}

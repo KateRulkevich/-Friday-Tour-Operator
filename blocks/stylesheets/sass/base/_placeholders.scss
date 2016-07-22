@@ -1,21 +1,21 @@
-@mixin blockStyle{
+%blockStyle{
 	width: 100%;
 	max-width: 1366px;
 	margin: 0 auto;
 	overflow: hidden;
 }
-@mixin earthSize{
+%earthSize{
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
 }
-@mixin blockTitle{
+%blockTitle{
 	text-transform: uppercase;
 	text-align: center;
 	color: #fff;
 
 }
-@mixin buttonStyle{
+%buttonStyle{
 	color: #fff;
 	border: none;
 	padding: 3px 10px;
